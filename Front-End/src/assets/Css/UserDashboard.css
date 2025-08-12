@@ -1,0 +1,32 @@
+/* body {
+  overflow: hidden;
+} */
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.sidebar {
+  background: linear-gradient(to bottom, #203a43, #2c5364, #203a43);
+}
+
+.nav .nav-item button {
+  color: #fff;
+  background-color: #000428;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.nav .nav-item button:hover , .logout:hover {
+  background: linear-gradient(90deg, #000428 0%, #004e92 100%);
+  color: #fff;
+}
+
+.logout-button .logout {
+    color: #fff;
+  background-color: #000428;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

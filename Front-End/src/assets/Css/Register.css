@@ -1,0 +1,63 @@
+.form-container {
+  background: #f8f9fa;
+  border-radius: 1rem;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(0, 123, 255, 0.1);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #212529;
+}
+
+.form-control, .form-select {
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus, .form-select:focus {
+  border-color: #66afe9;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-group .form-control {
+  border-right: 0;
+}
+
+.input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  border: none;
+  font-weight: 600;
+  padding: 10px 0;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  border: none;
+}
+
+.btn-register {
+  border: none;
+  font-weight: 600;
+  background-color :#000428;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn-register:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+}

@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.home-section {
+  position: relative;
+  width: 100vw;
+  background: linear-gradient(135deg, #000428 0%, #004e92 100%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.home-section .container-fluid {
+  padding: 90px ;
+}
+
+.content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-get-started {
+    background-color: #000428;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.btn-get-started:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+  color: white;
+  transform: translateY(-3px);
+  border: 1px solid white;
+}
+
+.feature-box {
+  background-color: #f8f9fa;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow:  6px 6px rgba(0,0,0,0.5);
+  text-align: center;
+  height: 100%;
+}
+
+.feature-box h5 {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  color : #000428;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: black;
+}
+
+/* Water Drop Animation */
+.water-drop {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  animation: drop linear infinite;
+  opacity: 0;
+}
+
+
+.home-section .container-fluid {
+    padding: 90px;
+}
+
+.hero-section {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  /* max-width: 800px; */
+  margin: 0 auto;
+  position: relative;
+}
+
+.home-section h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-top: 40px;
+  color: black;
+}
+
+.home-section p {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .home-section{
+    height: auto;
+  }
+
+  .home-section .feature-box {
+    display: block ;
+  }
+
+    .home-section p {
+    text-align: justify;
+  }
+    }
+
+@media (max-width: 576px) {
+  .home-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-section{
+    height: auto;
+  }
+
+.home-section .container-fluid {
+    padding: 10px;
+}
+
+  .feature-box {
+    padding-bottom: 90px;
+  }
+
+  .home-section p {
+    text-align: justify;
+  }
+}
+
+
+@keyframes drop {
+  0% {
+    transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.7;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Bubble Animation */
+.bubble {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  animation: bubbleUp linear infinite;
+}
+
+@keyframes bubbleUp {
+  0% {
+    transform: translateY(0) scale(0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100vh) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Pipe Connection Animation */
+.pipe-connection {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: pipeFlow linear infinite;
+}
+
+@keyframes pipeFlow {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+/* Water Ripple Animation */
+.water-ripple {
+  position: absolute;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: ripple 3s linear infinite;
+  opacity: 0;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(5);
+    opacity: 0;
+  }
+}
+
+/* Water Splash Animation */
+.water-splash {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  animation: splash 2s ease-out infinite;
+  opacity: 0;
+}
+
+@keyframes splash {
+  0% {
+    transform: scale(0.1) rotate(0deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2) rotate(20deg);
+    opacity: 0;
+  }
+}
+
+/* Faucet Drip Animation */
+.faucet-drip {
+  position: absolute;
+  width: 3px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), transparent);
+  animation: drip 2s ease-in infinite;
+  opacity: 0;
+}
+
+@keyframes drip {
+  0% {
+    transform: translateY(-50px);
+    height: 30px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    height: 50px;
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(100px);
+    height: 0;
+    opacity: 0;
+  }
+}

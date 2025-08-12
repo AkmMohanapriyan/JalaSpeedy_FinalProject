@@ -1,0 +1,432 @@
+
+/* Home Section Style Start */
+
+.home-section {
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.home-section .container-fluid {
+    padding: 90px;
+}
+
+.hero-section {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.home-section h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  padding-top: 40px;
+  color: black;
+}
+
+.home-section p {
+  margin: 0 auto;
+  font-size: 1.1rem;
+  text-align: justify;
+  color: white;
+}
+
+    @media (max-width: 768px) {
+        .home-section{
+    height: auto;
+  }
+
+    .home-section p {
+    text-align: justify;
+  }
+    }
+
+@media (max-width: 576px) {
+  .home-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .home-section{
+    height: auto;
+  }
+
+  .feature-box {
+    padding-bottom: 90px;
+  }
+
+  .home-section p {
+    text-align: justify;
+  }
+}
+
+/* Home Section Style End */
+
+
+/* About Section Style Start */
+
+    #about {
+      background-color: white;
+      height: 100vh;
+    }
+
+    #about .container-fluid {
+      padding: 90px ;
+    }
+
+    #about .about-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    #about .about-text {
+      font-size:25px;
+      /* color: #000000; */
+      text-align: center;
+    }
+
+    #about .about-image {
+      width: 90%;
+      border-radius: 20px;
+    }
+
+    @media (max-width: 768px) {
+
+      #about {
+        height: auto;
+      }
+
+      #about .container-fluid {
+        padding: 20px;
+      }
+
+      #about .about-title {
+        font-size: 2rem;
+        padding-top: 80px;
+      }
+
+      #about .about-text {
+        font-size: 1rem;
+        color: black;
+      }
+
+       #about .about-title {
+        text-align: center;
+       }
+    }
+
+
+/* About Section Style End */
+
+
+/* Features Section Style Start */
+
+.feature-section {
+  background-color: #f6f6f6;
+}
+
+.feature-section .container-fluid {
+  padding: 90px;
+}
+
+.feature-card {
+  background-color: white;
+  box-shadow:  6px 6px rgba(175, 52, 52, 0.5);
+  /* transition: transform 0.3s ease, box-shadow 0.3s ease; */
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+    @media (max-width: 768px) {
+
+      .feature-section {
+        height: auto;
+      }
+
+      .feature-section .container-fluid {
+        padding: 20px;
+      }
+
+      .feature-section .feature-card {
+        margin-bottom: 20px;
+        display:block;
+      }
+
+      .feature-card h5 {
+        font-size: 1.2rem;
+      }
+
+      .feature-section .feature-title {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+    }
+
+
+
+
+/* Features Section Style End */
+
+
+
+
+/* Services Section Style Start  */
+
+.service-section {
+  background-color: white;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.service-section {
+  height: auto;
+}
+
+.service-section .container-fluid {
+  padding: 90px;
+}
+
+
+    @media (max-width: 768px) {
+
+      .service-section {
+        height: auto;
+      }
+
+      .service-section .container-fluid {
+        padding: 20px;
+      }
+
+      .service-card {
+        margin-bottom: 20px;
+      }
+
+      .service-card h5 {
+        font-size: 1.2rem;
+      }
+
+      .service-card p {
+        font-size: 0.9rem;
+        color: black;
+      }
+
+      .service-section .service-title {
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 60px;
+      }
+
+    }
+
+
+    @media (max-width: 576px) {
+
+      .service-section {
+        height: auto;
+      }
+      .service-card {
+        padding: 20px;
+      }
+
+      .service-card h5 {
+        font-size: 1.5rem;
+      }
+
+      .service-card p {
+        font-size: 0.8rem;
+      }
+    }
+
+/* Services Section Style End */
+
+
+
+/* Contact Section Style Start */
+
+
+.contact-section {
+  width: 100%;
+  background-color: white;
+}
+
+.contact-section .container-fluid {
+  padding: 90px;
+}
+
+.contact-section ul {
+  padding-left: 0;
+}
+
+.contact-section li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-section li a:hover {
+  text-decoration: underline;
+}
+
+.map-responsive iframe {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.emergency-box {
+  background-color: #f6f6f6;
+  border-left: 5px solid #40A1F0;
+  text-align: left;
+}
+
+form {
+  background-color: #f6f6f6;
+  padding: 30px 50px;
+  border-radius: 15px;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* All form inputs */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: white;      
+  border: 1px solid #3d3d3d;      
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+.btn-sendMsg {
+  background: #000428;
+  color: #000000;
+  border: 1px solid #3d3d3d;      
+  width: 100%;
+  border: 2px solid white;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-sendMsg:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+  color: white;
+  border: 1px solid #000;      
+}
+
+.contact-section ul li {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.contact-section .social a {
+  background-color: #f6f6f6;
+  width: 210px;
+  height: 100px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 40px;
+  border-radius: 10px;
+}
+
+
+
+    @media (max-width: 768px) {
+
+  .contact-section {
+    height: auto;
+  }
+  .contact-section .container-fluid {
+    padding: 20px;
+  }
+
+  .contact-section ul li {
+    margin-bottom: 20px;
+  }
+
+  .contact-section .social a {
+    width: 100%;
+    height: 80px;
+    font-size: 30px;
+  }
+
+  .contact-section .social a i {
+    font-size: 30px;
+  }
+
+  .contact-section .social a span {
+    display: none;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3d3d3d;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #f6f6f6;
+    color: #000000;
+    border: 1px solid #3d3d3d;
+    transition: 0.3s ease;
+  }
+
+}
+/* Contact Section Style End */
+
+
+
+/* Feedback Section Style Start */
+
+.btn-send:hover {
+  background: linear-gradient(to right, #0056b3, #00aaff);
+  color: white;
+  border: 1px solid #000;
+}
+
+    @media (max-width: 768px) {
+
+  .feedback-section {
+    height: auto;
+  }
+  .feedback-section .container-fluid {
+    padding: 20px;
+  }
+}
+/* Feedback Section Style End */
