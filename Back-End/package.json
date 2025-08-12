@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node Server.js",
-      "build": "tsc",
+    "build": "tsc",
     "dev": "nodemon Server.js"
   },
   "keywords": [],
@@ -26,6 +26,7 @@
     "stripe": "^18.3.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
   }
 }
